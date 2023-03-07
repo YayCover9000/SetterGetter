@@ -1,10 +1,10 @@
-public class SetterGetter {
+public class Treffen {
     private String treffenOrt;
-    private int treffenDatum;
+    private String treffenDatum;
     private String treffenKleidung;
     private String treffenAnlass;
 
-    public SetterGetter (String ort, int year, String kleidung, String anlass) {
+    public Treffen(String ort, String year, String kleidung, String anlass) {
         this.treffenOrt = ort;
         this.treffenDatum = year;
         this.treffenKleidung = kleidung;
@@ -14,7 +14,7 @@ public class SetterGetter {
     public String getTreffenOrt () {
         return treffenOrt;
     }
-    public float getTreffenDatum () {
+    public String getTreffenDatum () {
         return treffenDatum;
     }
     public String getTreffenKleidung () {
@@ -23,10 +23,11 @@ public class SetterGetter {
     public String getTreffenAnlass () {
         return treffenAnlass;
     }
+
     public void setTreffenOrt (String ort) {
         treffenOrt = ort;
     }
-    public void setTreffenDatum (int year) {
+    public void setTreffenDatum (String year) {
         treffenDatum = year;
     }
     public void setTreffenKleidung(String kleidung) {
@@ -35,7 +36,7 @@ public class SetterGetter {
     public void setTreffenAnlass (String anlass) {
         treffenAnlass = anlass;
     }
-    public static void ausgeben (SetterGetter vorschlag) {
+    public static void ausgeben (Treffen vorschlag) {
         System.out.println("Treffen: " + vorschlag.getTreffenOrt() + " am " + vorschlag.getTreffenDatum() + " in " + vorschlag.getTreffenKleidung() + " für " + vorschlag.getTreffenAnlass());
     }
 }
